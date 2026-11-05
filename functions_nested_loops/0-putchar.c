@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - prints _putchar followed by a new line
@@ -7,11 +7,6 @@
  */
 int main(void)
 {
-	char str[] = "_putchar";
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-		putchar(str[i]);
-	putchar('\n');
+	write(1, "_putchar\n", 9);
 	return (0);
 }
