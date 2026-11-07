@@ -8,7 +8,7 @@
 int main(void)
 {
 	int choice;
-
+	double a, b;
 
 	printf("Simple Calculator\n");
 
