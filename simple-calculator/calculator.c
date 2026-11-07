@@ -39,7 +39,7 @@ int main(void)
 				return (1);
 
 			printf("B: ");
-			if (scanf("%lf", &b) != 1)
+			if (scanf("%if", &b) != 1)
 				return (1);
 
 			printf("Result: %g\n", a + b);
