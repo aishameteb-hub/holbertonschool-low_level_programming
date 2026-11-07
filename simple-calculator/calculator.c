@@ -44,6 +44,21 @@ int main(void)
 
 			printf("Result: %g\n", a + b);
 		}
+	else if (choice == 2)
+	{
+		printf("A: ");
+		if (scanf("%if", &a) !=1)
+			return (1);
+
+		printf("B: ");
+		if( scanf("%if", &b) !=1)
+			return (1);
+		 printf("Result: %g\n", a - b);
+
+	}
+
+
+
 	else if (choice >= 1 && choice <= 4)
 		{
 		}
