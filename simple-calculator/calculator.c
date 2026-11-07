@@ -35,7 +35,7 @@ int main(void)
 	else if (choice == 1)
 		{
 			printf("A: ");
-			if (scanf("%lf", &a) != 1)
+			if (scanf("%if", &a) != 1)
 				return (1);
 
 			printf("B: ");
