@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - skeleton of a simple calculator
+ * main - simple calculator with addition and subtraction
  *
  * Return: Always 0
  */
@@ -14,58 +14,54 @@ int main(void)
 
 	while (1)
 	{
-	printf("1) Add\n");
-	printf("2) Subtract\n");
-	printf("3) Multiply\n");
-	printf("4) Divide\n");
-	printf("0) Quit\n");
-	printf("Choice: ");
+		printf("1) Add\n");
+		printf("2) Subtract\n");
+		printf("3) Multiply\n");
+		printf("4) Divide\n");
+		printf("0) Quit\n");
+		printf("Choice: ");
 
-	if (scanf("%d", &choice) != 1)
-		return (1);
+		if (scanf("%d", &choice) != 1)
+			return (1);
 
-
-	if (choice == 0)
-	{
-		printf("Bye!\n");
-
-		break;
-	}
-	
-	else if (choice == 1)
+		if (choice == 0)
+		{
+			printf("Bye!\n");
+			break;
+		}
+		else if (choice == 1)
 		{
 			printf("A: ");
-			if (scanf("%if", &a) != 1)
+			if (scanf("%lf", &a) != 1)
 				return (1);
 
 			printf("B: ");
-			if (scanf("%if", &b) != 1)
+			if (scanf("%lf", &b) != 1)
 				return (1);
 
 			printf("Result: %g\n", a + b);
 		}
-	else if (choice == 2)
-	{
-		printf("A: ");
-		if (scanf("%if", &a) !=1)
-			return (1);
-
-		printf("B: ");
-		if(scanf("%if", &b) !=1)
-			return (1);
-		 printf("Result: %g\n", a - b);
-
-	}
-
-
-
-	else if (choice == 3 || choice == 4)
+		else if (choice == 2)
 		{
+			printf("A: ");
+			if (scanf("%lf", &a) != 1)
+				return (1);
+
+			printf("B: ");
+			if (scanf("%lf", &b) != 1)
+				return (1);
+
+			printf("Result: %g\n", a - b);
+		}
+		else if (choice == 3 || choice == 4)
+		{
+			/* other operations will be added in the next tasks */
 		}
 		else
 		{
 			printf("Invalid choice\n");
 		}
 	}
+
 	return (0);
 }
