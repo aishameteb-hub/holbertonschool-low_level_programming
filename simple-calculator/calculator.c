@@ -59,7 +59,7 @@ int main(void)
 
 
 
-	else if (choice >= 1 && choice <= 4)
+	else if (choice == 3 || choice == 4)
 		{
 		}
 		else
