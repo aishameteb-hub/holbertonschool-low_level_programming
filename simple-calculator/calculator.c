@@ -53,13 +53,28 @@ int main(void)
 
 			printf("Result: %g\n", a - b);
 		}
-		else if (choice == 3 || choice == 4)
+		else if (choice == 3)
 		{
-			/* other operations will be added in the next tasks */
+			printf("A: ");
+			if(scanf("%lf", &a) !=1)
+				return (1);
+			printf("B: ");
+			if (scanf("%lf", &b) !=1)
+				return (1);
+			printf("Result: %g\n", a * b);
+
 		}
-		else
+		else if (choice == 4) 
 		{
+			printf("A: ");
+			if(scanf("%lf", &a) !=1)
+				return (1);
+			printf("B: ");
+			if (b==0)
+		
 			printf("Invalid choice\n");
+			else 
+				printf("Reselt: %g\n",a / b);
 		}
 	}
 
